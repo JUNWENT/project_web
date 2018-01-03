@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../img/background2.jpg);
+    background-size:cover;
+}
+
+
+#header {
+    margin: 0 auto 30px;
+}
+
+#regbar {
+    height: 67px;
+    background: cadetblue;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+
+#navthing {
+    margin-left: 50px;
+}
+
+h2 {
+    padding: 20px;
+    color: #ecf0f1;
+}
+
+fieldset {
+    border: none;
+}
+
+.login,.signup {
+    position: relative;
+    width: 350px;
+    display: none;
+}
+
+.signup {
+    margin-left: 85px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #ECF0F1;
+    left: 10%;
+    position: absolute;
+    top: -10px;
+}
+
+.formholder {
+    background: #ecf0f1;
+    width: 350px;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.formholder input[type="email"], .formholder input[type="password"], .formholder input[type="text"] {
+    padding: 7px 5px;
+    margin: 10px 0;
+    width: 96%;
+    display: block;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+.formholder input[type="email"]:focus, .formholder input[type="password"]:focus, .formholder input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #1abc9c;
+}
+.formholder input[type="submit"] {
+    background: #1abc9c;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.formholder input[type="submit"]:hover {
+    background: #1bc6a4;
+}
+
+.randompad {
+    padding: 10px;
+}
+
+.green {
+    color: #1abc9c;
+}
+
+a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+a:hover {
+    color: #1abc9c;
+}
+
+ul{
+    display: none;
+    font:bold 13px Arial, Helvetica, sans-serif;
+    background-color: inherit;
+    list-style: none;
+    position: fixed;
+    text-align: center;
+    width: 125px;
+    top: 50px;
+    right: 78px;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.header .personal:active ul,
+.header .personal:hover ul,
+.header .personal.show ul{
+    display:block;
+}
+
+.header .personal ul li{
+    padding:5px;
+}
+
+.header .personal ul li a{
+    color: #dedede;
+}
+
+.header .personal ul li a:hover{
+    opacity:0.9;
+}
+
+#logout{
+    color:#1abc9c;
+    padding:5px;
+    background: transparent;
+    border:none;
+}
+
+#logout:hover{
+    opacity: 0.9;
+}
+
+.header .personal #id{
+    position:relative;
+    margin:0 auto;
+    max-width: 50px;
+    font-size: 21px;
+    padding:5px 0;
+    display:block;
+}
+
+.personal {
+    position: fixed;
+    top:9px;
+    right:77px;
+    float:right;
+    background-color:#3a3c3e;
+    width:102px;
+    height:48px;
+    border-radius:10px;
+}
+
+.personal:before{
+    content:'';
+    width:0;
+    height:0;
+    top: 18px;
+    left: 9px;
+    position:absolute;
+    border:5px solid transparent;
+    border-top-color:#fff;
+}
+
+#id{
+    color: #1abc9c;
+}
+

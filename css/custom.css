@@ -1,0 +1,350 @@
+* {outline: none;}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 { 
+	margin-top: 0;
+}
+
+b {
+	font-weight: 400;
+}
+
+a {
+	color: #333;
+}
+
+a:hover, a:focus {
+	text-decoration: none; 
+	color: #000;
+}
+
+::selection {
+	background-color: #eee;
+}
+
+body {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	word-spacing: 1px;
+	letter-spacing: 0.01em;
+}
+
+#single p,
+#page p {
+	margin-bottom: 25px;
+}
+
+.page-title {
+	text-align: center;
+}
+
+.title {
+	margin-bottom: 30px;
+}
+
+figure {
+	margin-bottom: 25px;
+}
+
+.img-responsive-center img {
+	margin: 0 auto;
+}
+
+.height-40px {
+	margin-bottom: 40px;
+}
+
+
+/**
+ * 3.2 - Main Navigation
+ */
+
+.main-nav {
+	margin-top: 11px;
+	max-width: 95%;
+}
+
+.main-nav a {
+	color: #000000 !important;
+	padding: 0 0 5px 0 !important;
+	margin-right: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+.main-nav a:active,
+.main-nav a:focus,
+.main-nav a:hover {
+	background-color: transparent !important;
+	border-bottom: 0;
+}
+
+.navbar-toggle {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin-right: 25px;
+}
+
+.navbar-toggle span {
+    font-size: 2em;
+    color: #000;
+}
+
+.content-body {
+	padding-bottom: 4em;
+}
+
+.post {
+	background: #fff;
+	padding: 30px 30px 0;
+}
+
+.entry-title {
+	text-align: center;
+	font-size: 1.9em;
+	margin-bottom: 20px;
+	line-height: 1.6;
+	padding: 10px 20px 0;
+}
+
+.entry-meta {
+	text-align: center;
+	color: #DDDDDD;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+
+.entry-content {
+	font-size: 18px;
+	line-height: 1.9;
+	font-weight: 300;
+	color: #000;
+}
+
+.post-category,
+.post-date,
+.post-author {
+	position: relative;
+	padding-right: 15px;
+}
+
+.post-author {
+	cursor:pointer;
+}
+
+.post-category::after,
+.post-date::after,
+.post-author::after {
+	position: absolute;
+	content: '.';
+	color: #000;
+	font-size: 30px;
+	top: -22px;
+	right: 1px;
+}
+
+/**
+ * 4.1 - Read More Button CSS 3 style
+ */
+
+.read-more {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	word-spacing: 1px;
+	letter-spacing: 0.01em;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.cl-effect-14 a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+.cl-effect-14 a::before,
+.cl-effect-14 a::after {
+	position: absolute;
+	width: 45px;
+	height: 1px;
+	background: #C3C3C3;
+	content: '';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-14 a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.cl-effect-14 a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::before,
+.cl-effect-14 a:focus::after {
+	background: #000;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+.short_content {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width: 20em;
+	margin: 0 auto;
+}
+
+img {
+	position:fixed;
+	top:430px;
+	right:200px;
+	height:290px;
+}
+
+.pagination {
+	text-align: center;
+}
+
+.pagination ul {
+	display: inline-block;
+}
+
+.pagination li {
+	display: inline;
+}
+
+.pagination a {
+	height: 2.5rem; /* 40 */
+	font-size: 1.25rem; /* 20 */
+	line-height: 38px; /* 40 */
+	color: #4d4348;
+	float: left;
+	border: 1px solid #4d4348;
+	padding: 0 1.25rem; /* 20 */
+	margin-top: -1px;
+	text-decoration: none;
+}
+
+.pagination li:not( :first-child ) a {
+	margin-left: -1px;
+}
+
+.pagination-current a {
+	color: #fff;
+	background-color: #4d4348;
+}
+
+.pagination li:not( .pagination-current ) a:hover {
+	background-color: rgba( 0, 0, 0, .1 );
+}
+
+.pagination-prev a,
+.pagination-next a,
+.pagination-first a,
+.pagination-last a {
+	font-variant: small-caps;
+	text-transform: lowercase;
+	line-height: 34px; /* 40 */
+}
+
+.pagination-prev a:before,
+.pagination-next a:after,
+.pagination-first a:before,
+.pagination-last a:after {
+	width: 0;
+	height: 0;
+	border: 0.313rem solid transparent; /* 5 */
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pagination-prev a:before,
+.pagination-first a:before {
+	border-left: none;
+	border-right-color: #4d4348;
+	margin-right: 0.313rem; /* 5 */
+}
+
+.pagination-next a:after,
+.pagination-last a:after {
+	border-right: none;
+	border-left-color: #4d4348;
+	margin-left: 0.313rem; /* 5 */
+}
+
+.pagination-first a:before {
+	-webkit-filter: drop-shadow( -0.25rem 0 0 #4d4348 ); /* 2 */
+	-moz-filter: drop-shadow( -0.25rem 0 0 #4d4348 ); /* 2 */
+	-ms-filter: drop-shadow( -0.25rem 0 0 #4d4348 ); /* 2 */
+	-o-filter: drop-shadow( -0.25rem 0 0 #4d4348 ); /* 2 */
+	filter: drop-shadow( -0.25rem 0 0 #4d4348 ); /* 2 */
+}
+
+.pagination-last a:after {
+	-webkit-filter: drop-shadow( 0.25rem 0 0 #4d4348 ); /* 2 */
+	-moz-filter: drop-shadow( 0.25rem 0 0 #4d4348 ); /* 2 */
+	-ms-filter: drop-shadow( 0.25rem 0 0 #4d4348 ); /* 2 */
+	-o-filter: drop-shadow( 0.25rem 0 0 #4d4348 ); /* 2 */
+	filter: drop-shadow( 0.25rem 0 0 #4d4348 ); /* 2 */
+}
+
+a#current_page {
+	background-color: darkseagreen;
+}
+
+.more-link {
+	cursor:s-resize;
+}

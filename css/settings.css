@@ -1,0 +1,67 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+fieldset {
+    padding:30px;
+    padding-top: 50px;
+    position:relative;
+    top:80px;
+    width:80%;
+    margin: 0 auto;
+    border:none;
+    background:#f8f8f8;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 50px;
+
+}
+
+input {
+    display:block;
+    border:none;
+    background: transparent;
+    height:30px;
+    line-height: 30px;
+    width:100%;
+    outline: none;
+    border:0;
+    padding:20px;
+}
+
+label {
+    width:200px;
+    font-size: 15px;
+    padding:10px;
+
+}
+
+#red{
+    color: darkred;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#save_button,#delete_button{
+    width:20%;
+    margin:5px auto;
+    background-color: #1abc9c;
+    font-size: 20px;
+    height:20px;
+    line-height: 20px;
+    vertical-align:middle;
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+    color:#FFFFFF;
+    border-radius: 20px;
+}
+
+#watch {
+    position: relative;
+    top: 103px;
+    left: 27%;
+    width: 42%;
+    height: 140px;
+    z-index: 300;
+}
